@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">MediMate</string>
+
+    <string name="login_subtitle">Inicia la sessió</string>
+    <string name="login_email_label">Correu electrònic</string>
+    <string name="login_email_hint">nom@correu.cat</string>
+    <string name="login_password_label">Contrasenya</string>
+    <string name="login_password_hint">••••••••</string>
+    <string name="login_button">Entra</string>
+    <string name="login_continue_without_account">Continuar sense compte</string>
+    <string name="login_create_account">Crear un compte nou</string>
+    <string name="logo_desc">Logotip de MediMate</string>
+
+    <string name="register_title">Crear compte</string>
+    <string name="register_back_desc">Tornar enrere</string>
+    <string name="register_name_label">Nom</string>
+    <string name="register_name_hint">Com et diuen?</string>
+    <string name="register_email_label">Correu electrònic</string>
+    <string name="register_email_hint">nom@correu.cat</string>
+    <string name="register_password_label">Contrasenya</string>
+    <string name="register_password_hint">Mínim 8 caràcters</string>
+    <string name="register_privacy_note">Les teves dades de salut es guarden només en aquest mòbil.</string>
+    <string name="register_button">Crear compte</string>
+    <string name="register_already_have_account">Ja tinc un compte</string>
 </resources>

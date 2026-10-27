@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="medimate_primary">#0F766E</color>
+    <color name="medimate_primary_dark">#0B5A54</color>
+    <color name="medimate_primary_light">#D5EEEA</color>
+    <color name="medimate_background">#F5F3EC</color>
+    <color name="medimate_surface">#FFFFFF</color>
+    <color name="medimate_text">#1F2A2A</color>
+    <color name="medimate_text_secondary">#5F6B6B</color>
+    <color name="medimate_outline">#CFCFC8</color>
+    <color name="medimate_error">#C62828</color>
 </resources>
