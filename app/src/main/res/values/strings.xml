@@ -22,4 +22,19 @@
     <string name="register_privacy_note">Les teves dades de salut es guarden només en aquest mòbil.</string>
     <string name="register_button">Crear compte</string>
     <string name="register_already_have_account">Ja tinc un compte</string>
+
+    <string name="today_greeting">Bon dia</string>
+    <string name="today_filter_pending">Pendents</string>
+    <string name="today_filter_taken">Preses</string>
+    <string name="today_filter_all">Totes</string>
+    <string name="today_take_button">Ho he près</string>
+    <string name="today_empty">No hi ha cap presa en aquest filtre</string>
+    <string name="today_disclaimer">MediMate no substitueix el consell mèdic ni modifica el tractament.</string>
+    <string name="status_pending">Pendent</string>
+    <string name="status_taken">Près</string>
+
+    <string name="nav_today">Avui</string>
+    <string name="nav_meds">Medicació</string>
+    <string name="nav_caregiver">Cuidador</string>
+    <string name="nav_settings">Ajustos</string>
 </resources>
