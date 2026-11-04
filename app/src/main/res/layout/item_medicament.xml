@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/med_stroke"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMedName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/medimate_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="Paracetamol" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvReason"
+                        style="@style/MediMate.Badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/med_reason_bg"
+                        android:textColor="@color/med_reason_text"
+                        tools:text="Dolor" />
+
+                    <TextView
+                        android:id="@+id/tvSchedule"
+                        style="@style/MediMate.Badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="@color/med_time_bg"
+                        android:textColor="@color/med_time_text"
+                        tools:text="08:00" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/medimate_text_secondary"
+                    android:textSize="16sp"
+                    tools:text="1 comprimit" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivChevron"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_chevron_right" />
+        </LinearLayout>
+
+        <!-- Només per als medicaments "Si ho necessites" (ara amagat) -->
+        <LinearLayout
+            android:id="@+id/layoutNeeded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvLastTaken"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/medimate_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Última presa: ahir, 21:30" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTaken"
+                style="@style/Widget.MediMate.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:minHeight="56dp"
+                android:text="@string/meds_taken"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_check_white"
+                app:iconGravity="textStart"
+                app:iconSize="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

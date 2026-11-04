@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/medimate_background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvMedsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:text="@string/meds_title"
+        android:textColor="@color/medimate_text"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSearch"
+        style="@style/Widget.MediMate.TextInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/meds_search_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMedsTitle"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollFilters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilSearch">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/meds_filter_all"
+                android:textSize="18sp"
+                app:chipMinHeight="48dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipHeadache"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meds_filter_headache"
+                android:textSize="18sp"
+                app:chipMinHeight="48dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPain"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meds_filter_pain"
+                android:textSize="18sp"
+                app:chipMinHeight="48dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipStomach"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meds_filter_stomach"
+                android:textSize="18sp"
+                app:chipMinHeight="48dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFever"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meds_filter_fever"
+                android:textSize="18sp"
+                app:chipMinHeight="48dp" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMedicaments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/btnAddMed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollFilters"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_medicament" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddMed"
+        style="@style/Widget.MediMate.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/meds_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

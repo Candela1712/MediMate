@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="med_stroke">#E7E2D8</color>
+    <color name="med_reason_bg">#E6ECF8</color>
+    <color name="med_reason_text">#1F3A7A</color>
+    <color name="med_time_bg">#D9F0EC</color>
+    <color name="med_time_text">#0B5A54</color>
+    <color name="med_needed_bg">#FFF1D6</color>
+    <color name="med_needed_text">#7A4B00</color>
+</resources>

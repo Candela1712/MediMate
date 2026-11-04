@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meds_title">Medicaments</string>
+    <string name="meds_search_hint">Cerca pel nom o el motiu</string>
+    <string name="meds_filter_all">Tots</string>
+    <string name="meds_filter_headache">Mal de cap</string>
+    <string name="meds_filter_pain">Dolor</string>
+    <string name="meds_filter_stomach">Estómac</string>
+    <string name="meds_filter_fever">Febre</string>
+    <string name="meds_add">+ Afegir medicament</string>
+    <string name="meds_taken">L’he près</string>
+</resources>
