@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Ajustos</string>
+    <string name="settings_font_size">Mida de la lletra</string>
+    <string name="settings_font_letter">A</string>
+    <string name="settings_font_small_desc">Lletra petita</string>
+    <string name="settings_font_medium_desc">Lletra mitjana</string>
+    <string name="settings_font_large_desc">Lletra gran</string>
+    <string name="settings_high_contrast">Alt contrast</string>
+    <string name="settings_high_contrast_desc">Colors més marcats</string>
+    <string name="settings_dark_theme">Tema fosc</string>
+    <string name="settings_dark_theme_desc">Descansa la vista</string>
+    <string name="settings_repeat_alert">Avís repetit</string>
+    <string name="settings_repeat_alert_desc">Cada 5 min fins que confirmis</string>
+    <string name="settings_sound_vibration">So i vibració</string>
+    <string name="settings_sound_vibration_desc">L\'avís sonarà i vibrarà</string>
+    <string name="settings_caregiver_pin">PIN del cuidador</string>
+    <string name="settings_caregiver_pin_desc">Protegeix el mode cuidador</string>
+    <string name="settings_switch_off">No</string>
+    <string name="settings_switch_on">Sí</string>
+    <string name="settings_chevron_desc">Obrir</string>
+</resources>
