@@ -37,4 +37,36 @@
     <string name="nav_meds">Medicació</string>
     <string name="nav_caregiver">Cuidador</string>
     <string name="nav_settings">Ajustos</string>
+
+    <string name="new_med_title">Nou medicament</string>
+    <string name="cd_back">Tornar enrere</string>
+    <string name="med_name_label">Nom</string>
+    <string name="med_name_hint">Ex.: Ibuprofèn</string>
+    <string name="med_reason_label">Per a què el prens?</string>
+    <string name="med_reason_helper">Els teus medicaments es poden agrupar segons el motiu.</string>
+    <string name="med_reason_example">Mal de cap</string>
+    <string name="med_when_label">Quan el prens?</string>
+    <string name="med_when_fixed">A hores fixes</string>
+    <string name="med_when_as_needed">Només quan el necessiti</string>
+    <string name="med_max_label">Quant en pots prendre? (segons el metge)</string>
+    <string name="med_max_example">Màx. 3 al dia, cada 8 hores</string>
+    <string name="med_max_helper">No pots passar d\'aquest límit. T\'avisarem si t\'hi acostes.</string>
+    <string name="med_notes_label">Notes</string>
+    <string name="med_notes_example">Amb menjar</string>
+    <string name="btn_save">Desar</string>
+    <string name="btn_delete_med">Eliminar medicament</string>
+    <string name="caregiver_title">Mode cuidador</string>
+    <string name="caregiver_subtitle">Com va la medicació?</string>
+    <string name="badge_pin">PIN</string>
+    <string name="streak_days_number">5 dies</string>
+    <string name="streak_days_label">sense cap oblit</string>
+    <string name="missed_days_number">1 dia</string>
+    <string name="missed_days_label">amb oblit</string>
+    <string name="status_all_taken">Tot pres</string>
+    <string name="status_missed">Pres oblidat</string>
+    <string name="status_pending">Falta 1 presa</string>
+    <string name="btn_change_schedule">Canviar els horaris</string>
+    <string name="btn_send_summary">Enviar o imprimir resum</string>
+
+
 </resources>

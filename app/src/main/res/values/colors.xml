@@ -13,4 +13,13 @@
     <color name="medimate_error">#C62828</color>
     <color name="medimate_warning">#B45309</color>
     <color name="medimate_warning_light">#FDEBD0</color>
+
+    <color name="badge_missed_bg">#FDE8E6</color>
+    <color name="badge_missed_text">@color/medimate_error</color>
+    <color name="danger">@color/medimate_error</color>
+    <color name="success">@color/medimate_primary</color>
+    <color name="primary">@color/medimate_primary</color>
+    <color name="background">@color/medimate_background</color>
+    <color name="text_primary">@color/medimate_text</color>
+    <color name="text_secondary">@color/medimate_text_secondary</color>
 </resources>
