@@ -64,7 +64,7 @@
     <string name="missed_days_label">amb oblit</string>
     <string name="status_all_taken">Tot pres</string>
     <string name="status_missed">Pres oblidat</string>
-    <string name="status_pending">Falta 1 presa</string>
+    <string name="status_caregiver_pending">Falta 1 presa</string>
     <string name="btn_change_schedule">Canviar els horaris</string>
     <string name="btn_send_summary">Enviar o imprimir resum</string>
 
