@@ -1,7 +1,5 @@
 package com.candelaortuno.medimate
 
-import android.app.Activity
+import androidx.fragment.app.Fragment
 
-class SettingsFragment : Activity() {
-
-}
+class SettingsFragment : Fragment(R.layout.fragment_settings)
