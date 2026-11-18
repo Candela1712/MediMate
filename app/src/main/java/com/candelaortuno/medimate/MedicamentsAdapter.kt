@@ -22,6 +22,7 @@ class MedicamentsAdapter(
         holder.tvReason.text = medicament.motiu
         holder.tvSchedule.text = medicament.hora
         holder.tvNote.text = medicament.nota
+        holder.itemView.contentDescription = "${medicament.nom}, ${medicament.motiu}, ${medicament.hora}"
 
         holder.itemView.setOnClickListener { onModificar(medicament) }
         holder.itemView.setOnLongClickListener {
