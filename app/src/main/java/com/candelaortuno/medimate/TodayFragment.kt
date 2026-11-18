@@ -1,7 +1,9 @@
 package com.candelaortuno.medimate
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 
@@ -10,7 +12,10 @@ class TodayFragment : Fragment(R.layout.fragment_today) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val rvDoses = view.findViewById<RecyclerView>(R.id.rvDoses)
-        rvDoses.adapter = DosiAdapter(dosesProva())
+        rvDoses.adapter = DosiAdapter(dosesProva()) { dosi ->
+            Log.i("MediMate", "Presa marcada: ${dosi.nom} ${dosi.hora}")
+            Toast.makeText(requireContext(), "Presa de ${dosi.nom}", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun dosesProva(): List<Dosi> = listOf(

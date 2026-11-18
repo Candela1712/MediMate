@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class MedicamentsAdapter(
-    private val medicaments: List<Medicament>
+    private val medicaments: List<Medicament>,
+    private val onModificar: (Medicament) -> Unit,
+    private val onEliminar: (Medicament) -> Unit
 ) : RecyclerView.Adapter<MedicamentViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MedicamentViewHolder {
@@ -20,6 +22,12 @@ class MedicamentsAdapter(
         holder.tvReason.text = medicament.motiu
         holder.tvSchedule.text = medicament.hora
         holder.tvNote.text = medicament.nota
+
+        holder.itemView.setOnClickListener { onModificar(medicament) }
+        holder.itemView.setOnLongClickListener {
+            onEliminar(medicament)
+            true
+        }
     }
 
     override fun getItemCount(): Int = medicaments.size

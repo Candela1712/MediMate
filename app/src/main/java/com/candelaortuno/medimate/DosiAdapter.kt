@@ -7,7 +7,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class DosiAdapter(
-    private val doses: List<Dosi>
+    private val doses: List<Dosi>,
+    private val onPrendre: (Dosi) -> Unit
 ) : RecyclerView.Adapter<DosiViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DosiViewHolder {
@@ -34,6 +35,8 @@ class DosiAdapter(
             holder.tvStatusBadge.setTextColor(ContextCompat.getColor(context, R.color.medimate_warning))
             holder.btnTake.visibility = View.VISIBLE
         }
+
+        holder.btnTake.setOnClickListener { onPrendre(dosi) }
     }
 
     override fun getItemCount(): Int = doses.size
