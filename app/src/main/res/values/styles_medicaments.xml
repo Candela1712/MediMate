@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MediMate.Badge">
+    <style name="MediMate.Badge" parent="">
         <item name="android:background">@drawable/bg_badge</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">12dp</item>
