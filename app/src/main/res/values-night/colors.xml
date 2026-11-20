@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="medimate_background">#121816</color>
+    <color name="medimate_surface">#1D2625</color>
+    <color name="medimate_text">#EEF2F1</color>
+    <color name="medimate_text_secondary">#A8B5B3</color>
+    <color name="medimate_outline">#3B4846</color>
+    <color name="med_stroke">#2E3A38</color>
+</resources>
