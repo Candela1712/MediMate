@@ -31,3 +31,8 @@ Hi ha dues llistes: Medicació (item_medicament) i Avui (item_dose).
 
 ## Lliurament
 ZIP del projecte, enllaç a GitHub i enllaç al vídeo.
+
+## Tema fosc
+A Ajustos hi ha un interruptor per canviar entre tema normal i fosc. El valor es guarda amb
+SharedPreferences (classe MediMateApp) i s'aplica en arrencar l'app amb
+AppCompatDelegate.setDefaultNightMode. Els colors del mode nit són a res/values-night/colors.xml.
