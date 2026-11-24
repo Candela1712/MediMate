@@ -1,33 +1,41 @@
 # MediMate - Activitat 06: Menú i llistes
 
-## Splash screen
-SplashActivity és l'activity inicial (LAUNCHER). Mostra el logotip amb una animació
-(fade + escala definida a res/anim/splash_logo.xml) i, quan l'animació acaba, obre MainActivity.
+En aquesta activitat hem fet la pantalla inicial, el menú de baix, les llistes i el canvi de tema.
+
+## Pantalla inicial (splash)
+Quan obrim l'app, el primer que surt és `SplashActivity`. Mostra el logo de MediMate i fa una animació: el logo apareix poc a poc i es fa més gran. L'animació està a `res/anim/splash_logo.xml`. Quan acaba, s'obre la pantalla principal (`MainActivity`) i el splash es tanca.
 
 ## Menú de navegació
-MainActivity conté un FragmentContainerView i un BottomNavigationView amb el menú
-menu_bottom_nav.xml. Un listener (setOnItemSelectedListener) substitueix el fragment segons
-l'ítem triat: Avui, Medicació, Cuidador i Ajustos. Per defecte s'obre Avui.
+`MainActivity` té tres coses una sota l'altra: un espai per als fragments, el text legal i el menú de baix (`BottomNavigationView`).
+El menú té quatre opcions: Avui, Medicació, Cuidador i Ajustos. Quan toquem una opció, el programa canvia el fragment que es veu a l'espai de dalt. Això ho fa la funció `carregarFragment`. Quan s'obre l'app, per defecte surt Avui.
 
-## RecyclerView
-Hi ha dues llistes: Medicació (item_medicament) i Avui (item_dose).
-- Data class: Medicament i Dosi guarden les dades de cada fila.
-- Holder: MedicamentViewHolder i DosiViewHolder guarden les referències a les vistes de la fila.
-- Adapter: MedicamentsAdapter i DosiAdapter creen la fila (onCreateViewHolder, inflant el layout),
-  hi posen les dades (onBindViewHolder) i diuen quants elements hi ha (getItemCount).
-  Els items són de prova i es creen als fragments.
+## Llistes (RecyclerView)
+Tenim dues llistes: Avui (les preses del dia) i Medicació (els medicaments).
+Cada llista necessita tres parts:
+- **Data class:** guarda les dades d'una fila. Tenim `Dosi` per a Avui i `Medicament` per a Medicació.
+- **Holder:** guarda les vistes d'una fila (els textos i el botó) perquè no s'hagin de buscar cada vegada. Són `DosiViewHolder` i `MedicamentViewHolder`.
+- **Adapter:** és el que connecta les dades amb la llista. Fa tres coses: crea una fila nova (`onCreateViewHolder`), hi posa les dades (`onBindViewHolder`) i diu quantes files hi ha (`getItemCount`). Són `DosiAdapter` i `MedicamentsAdapter`.
+
+Els medicaments i les preses que es veuen són dades de prova que hem escrit als fragments.
 
 ## Events
-- Afegir: botó "Afegir medicament" mostra Toast i Log.
-- Modificar: clic sobre un medicament mostra Toast i Log.
-- Eliminar: clic llarg sobre un medicament mostra Toast i Log.
-- Botó "Ho he près" de la llista d'Avui mostra Toast i Log.
+Hem programat què passa quan l'usuari toca coses. En tots els casos surt un Toast (missatge curt a la pantalla) i s'escriu un Log:
+- **Afegir:** botó "Afegir medicament".
+- **Modificar:** tocar un medicament.
+- **Eliminar:** mantenir premut un medicament.
+- A Avui, el botó "Ho he près" també fa Toast i Log.
+
+## Tema fosc
+A Ajustos hi ha un interruptor per posar el tema fosc o el normal. Quan el canviem, l'app es torna a pintar amb el tema nou. L'opció es guarda amb `SharedPreferences`, i la classe `MediMateApp` la llegeix quan s'obre l'app, així no es perd. Els colors del mode fosc estan a `res/values-night/colors.xml`.
 
 ## Accessibilitat
-- El logotip té contentDescription.
-- Els títols estan marcats com a encapçalament (accessibilityHeading).
-- Els botons i les icones de navegació tenen una mida mínima tàctil de 48dp.
-- Cada medicament de la llista té una descripció per a lectors de pantalla.
+Això és el que hem fet:
+- El logo té una descripció (`contentDescription`) perquè la llegeixi el lector de pantalla.
+- Els títols estan marcats com a encapçalament.
+- Els botons i el menú tenen una mida prou gran per tocar-los bé (mínim 48dp).
+- Cada medicament de la llista té una descripció amb el nom, el motiu i l'hora.
 
 ## Lliurament
-ZIP del projecte, enllaç a GitHub i enllaç al vídeo.
+- ZIP del projecte
+- Enllaç a GitHub
+- Enllaç al vídeo
