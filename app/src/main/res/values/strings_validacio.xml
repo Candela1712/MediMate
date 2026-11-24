@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_email_buit">Escriu el correu electrònic</string>
+    <string name="error_email_invalid">El correu no és correcte</string>
+    <string name="error_password_buit">Escriu la contrasenya</string>
+    <string name="error_password_curta">La contrasenya ha de tenir mínim 8 caràcters</string>
+    <string name="error_nom_buit">Escriu el teu nom</string>
+    <string name="error_nom_curt">El nom ha de tenir mínim 2 lletres</string>
+    <string name="error_nom_invalid">El nom només pot tenir lletres</string>
+    <string name="register_ok">Compte creat correctament</string>
+</resources>
